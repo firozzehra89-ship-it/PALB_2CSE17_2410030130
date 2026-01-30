@@ -1,0 +1,20 @@
+def find_union(a, b):
+    union_set = set()
+    
+    for num in a:
+        union_set.add(num)
+        
+    for num in b:
+        union_set.add(num)
+    
+    return list(union_set)
+
+if __name__ == "__main__":
+    a = [1, 2, 3, 2, 1]
+    b = [3, 2, 2, 3, 3, 2]
+    
+    result = find_union(a, b)
+    
+    print(f"Array A: {a}")
+    print(f"Array B: {b}")
+    print(f"Union: {result}")
